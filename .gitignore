@@ -1,0 +1,33 @@
+# Other checkout files #
+########################
+# Add files here
+
+# Distribution files #
+######################
+ansible/inventories/*/*/credentials.yml
+_db_backups
+
+# Runtime files #
+#################
+ansible-digital_ocean.cache
+
+# OS generated files #
+######################
+*/.DS_Store
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+
+# Temporary Files #
+###################
+*.swp
+
+# Runtime Generated Files #
+###########################
+.vagrant
+ansible/credentials
