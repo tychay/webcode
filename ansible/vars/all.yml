@@ -21,6 +21,8 @@ sqlite:
     install: '1'
 php:
     install: '1'
-    ppa: php5-5.6
     packages: [php5-cli, php5-intl, php5-mcrypt, php5-mysql, php5-sqlite]
+    ppa: php
+    #ppa: php5-5.6
+    #Issue #289 https://github.com/phansible/phansible/issues/289
 
