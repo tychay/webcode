@@ -10,6 +10,7 @@ nginx:
     install: '1'
     docroot: /vagrant
     servername: myApp.vb
+    client_max_body_size: 64M
 mariadb:
     install: '1'
     root_password: '123'
@@ -25,4 +26,3 @@ php:
     ppa: php
     #ppa: php5-5.6
     #Issue #289 https://github.com/phansible/phansible/issues/289
-

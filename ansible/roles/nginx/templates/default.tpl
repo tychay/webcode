@@ -1,10 +1,13 @@
 server {
+    charset utf-8;
     listen  80;
 
     root {{ nginx.docroot }};
     index index.html index.php;
 
     server_name {{ nginx.servername }};
+
+    client_max_body_size {{ nginx.client_max_body_size }};
 
     location / {
         try_files $uri $uri/ /index.php?$query_string;
@@ -14,7 +17,7 @@ server {
 
     error_page 500 502 503 504 /50x.html;
         location = /50x.html {
-        root /usr/share/nginx/www;
+        root /usr/share/nginx/html;
     }
 
     location ~ \.php$ {
